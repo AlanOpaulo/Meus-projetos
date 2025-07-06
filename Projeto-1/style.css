@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    border: 3px solid;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+nav  .text{
+    width: 50%;
+    display: flex;
+    align-items: center; 
+}
+nav  .text h1{
+    color: white;
+}
+nav  .text span{
+    color: yellow;
+}
+nav  .links{
+    width: 50%;
+    display: flex;
+}
+nav  .links ul{
+    display: flex;
+}
+nav  .links ul span li{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    margin-right: 130px;
+
+}
+
+nav  .links ul span li:hover{
+    border-bottom: 2px solid yellow;
+}
+nav  .links ul li a{
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+nav  .links ul  button{
+    background-color: yellow;
+    width: 90px;
+    height: 24px;
+    border-radius: 30px;
+    transition: 0.4s;
+    padding: 20px;
+    display: flex;
+}
+nav  .links ul  button:hover{
+    scale: 1.1;
+}
+nav  .links ul li  button a{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    align-self: center;
+
+}
+/*inicio do codigo header */
+header{
+  background-image: url("img/mercedesdecostas.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 751px;
+}
+header {
+    display: flex;
+    align-items: center;
+    
+}
+header .text h1 span{
+    color: yellow;
+}
+header .text h1 {
+    color: white;
+}
+header .text p{
+    color: white;
+
+}
+header .text {
+    margin: 0 2%;
+}
+header .text button{
+    padding: 13px;
+    margin-top:50px ;
+    width: 160px;
+    border-radius: 50px;
+    background-color: yellow;
+    transition: 0.3s;
+}
+header .text button:hover{
+    scale: 1.05;
+}
+header .text button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+/*primeira aside*/
+aside{
+    background-color: #ffff00;
+}
+aside .container{
+    margin: 0 5%;
+    display: flex;
+    height: 80px;
+}
+aside .container .text{
+    width: 50%;
+    align-self: center;
+}
+aside .container .est{
+    width: 50%;
+    align-self: center;
+}
+aside .container .est ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    
+}
+aside .container .est ul li{
+    list-style: none;
+}
+aside .container .est ul li p span{    
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/*primeira section*/
+section .container{
+    display: flex;
+    height: 600px;
+    align-items: center; 
+    margin: 0 2%;
+}
+section .container .imagens{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between; 
+}
+section .container .text{
+    width: 45%;
+}
+section .container .imagens div{
+    display: flex;
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 50px;
+    background: linear-gradient(#ffff00,white);
+    transition: 0.5s;
+}
+section .container .imagens div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    scale: 1.06;
+}
+section .container .imagens div img{
+    width: 40%;
+}
+
+section .container .imagens div p{
+    align-self: center;
+    width: 60%;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+
+}
+/*prim*/
+section .container1 {
+    display: flex;
+    height: 770px;
+    align-items: center; 
+    background-image:url("img/Design\ sem\ nome\ \(1\).png") ;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow:auto;
+}
+section .container1 .text{
+    width: 50%;
+    margin: 0 5%;
+}
+section .container1 .imagen{
+    width: 50%;
+    margin: 0 5%;
+    border-radius: 40px;
+    overflow: hidden;
+    
+}
+section .container1 .imagen img{
+    width: 100%;
+}
