@@ -208,3 +208,23 @@ section .container1 .imagen{
 section .container1 .imagen img{
     width: 100%;
 }
+/*inicio do footer*/
+footer{
+    background-color: black;
+}
+footer .container{
+    margin: 0 5%;
+}
+footer .container .cards{
+    width: 50%;
+    display: flex;
+}
+footer .container .cards .redes{
+    display: flex;
+}
+footer .container .cards .redes h1{
+    color: white;
+}
+footer .container .links{
+    width: 50%;
+}
