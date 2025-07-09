@@ -25,7 +25,7 @@ nav  .text span{
     color: yellow;
 }
 nav  .links{
-    width: 50%;
+    width: 100%;
     display: flex;
 }
 nav  .links ul{
@@ -122,7 +122,7 @@ aside .container .text{
     align-self: center;
 }
 aside .container .est{
-    width: 50%;
+    width: 100%;
     align-self: center;
 }
 aside .container .est ul{
@@ -142,20 +142,22 @@ aside .container .est ul li p span{
 /*primeira section*/
 section .container{
     display: flex;
-    height: 600px;
+    min-height: 200px;
+    max-height: 800px;
     align-items: center; 
     margin: 0 2%;
 }
 section .container .imagens{
-    width: 50%;
-    height: 100%;
+    max-width: 600px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between; 
+    justify-content: flex-end;
 }
 section .container .text{
-    width: 45%;
+    width: 50%;
+    min-width: 600px;
 }
 section .container .imagens div{
     display: flex;
