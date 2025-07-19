@@ -1,44 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        body{
-            display: flex;
+
+        body {
+            
             justify-content: center;
             height: 800px;
             align-items: center;
 
         }
-        main{
+        .cadastro0{
             border: 2px solid;
             padding: 100px;
             height: auto;
             border-radius: 40px;
             width: 500px;
-        }
-        .cadastro{
-            padding-top: 30px;
-        }
-        h1{
-            justify-self: center;
+            align-self: center;
+            backdrop-filter: blur(20px);
+
+            
             
         }
+        main{
+            border: 2px solid;
+            height: 737px;
+            display: flex;
+            justify-content: center;
+            background-image: url("img/lambo\ de\ costa.jpg");
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
+        .cadastro {
+            padding-top: 30px;
+        }
+
+        h1 {
+            justify-self: center;
+
+        }
+        .cadastro0  h1{
+            color: yellow;
+        }
+        .cadastro0 .cadastro label{
+            color: white;
+        }
+        .cadastro0 .cadastro legend{
+            color: yellow;
+        }
+
+        /*começo do nav*/
+        nav {
+            display: flex;
+            border: 3px solid;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+
+        }
+
+        nav .text {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        nav .text h1 {
+            color: white;
+        }
+
+        nav .text span {
+            color: yellow;
+        }
+
+        nav .links {
+            width: 100%;
+            display: flex;
+        }
+
+        nav .links ul {
+            display: flex;
+        }
+
+        nav .links ul span li {
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            margin-right: 130px;
+
+        }
+
+        nav .links ul span li:hover {
+            border-bottom: 2px solid yellow;
+            padding: auto;
+        }
+
+        nav .links ul li a {
+            text-decoration: none;
+            color: white;
+            align-self: center;
+        }
+
+        nav .links ul button {
+            background-color: yellow;
+            width: 90px;
+            height: 24px;
+            border-radius: 30px;
+            transition: 0.4s;
+            padding: 20px;
+            display: flex;
+        }
+
+        nav .links ul button:hover {
+            scale: 1.1;
+        }
+
+        nav .links ul li button a {
+            color: rgb(0, 0, 0);
+            font-weight: 800;
+            align-self: center;
+
+        }
     </style>
 </head>
+
 <body>
-    
-        <main>
-             <h1>cadastro</h1>
+    <nav>
+
+        <div class="text">
+            <h1>Thomas <span>Turbo</span></h1>
+        </div>
+        <div class="links">
+            <ul>
+                <span>
+                    <li><a href="index.html">Home</a></li>
+                </span>
+                <span>
+                    <li><a href="">Contatos</a></li>
+                </span>
+                <span>
+                    <li><a href="">Produtos</a></li>
+                </span>
+                <li><button><a href="index_cad.html">Login</a></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cadastro0">
+
+       
+        <h1>cadastro</h1>
         <div class="cadastro">
             <label for="Nome">Nome:</label>
             <input type="text" name="Nome" id="Nome" placeholder="Digite seu Nome" size="40">
@@ -60,13 +184,15 @@
             <br>
             <legend>Digite sua senha novamente</legend>
             <br>
-            <label for="senha1">Senha</label>
+            <label for="senha1">Senha:</label>
             <input type="password" name="senha1" id="senha1" placeholder="Digite sua Senha. EX:123456">
 
 
         </div>
+    </div>
     </main>
 
-    
+
 </body>
+
 </html>
