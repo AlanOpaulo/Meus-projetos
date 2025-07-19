@@ -4,15 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 800px;
+            align-items: center;
+
+        }
+        main{
+            border: 2px solid;
+            padding: 100px;
+            height: auto;
+            border-radius: 40px;
+            width: 500px;
+        }
+        .cadastro{
+            padding-top: 30px;
+        }
+        h1{
+            justify-self: center;
+            
+        }
+
+    </style>
 </head>
 <body>
-    <fieldset>
-        <h1>cadastro</h1>
+    
+        <main>
+             <h1>cadastro</h1>
         <div class="cadastro">
-            
+            <label for="Nome">Nome:</label>
+            <input type="text" name="Nome" id="Nome" placeholder="Digite seu Nome" size="40">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu Email" size="40">
+            <br>
+            <br>
+            <label for="Telefones">Numero:</label>
+            <input type="number" name="Telefones" id="Telefones" placeholder="Digite seu Numero" size="20">
+            <br>
+            <br>
+            <legend>Senha no minimo 8 digitos</legend>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua Senha. EX:123456">
+            <br>
+            <br>
+            <legend>Digite sua senha novamente</legend>
+            <br>
+            <label for="senha1">Senha</label>
+            <input type="password" name="senha1" id="senha1" placeholder="Digite sua Senha. EX:123456">
+
+
         </div>
-    </fieldset>
+    </main>
 
     
 </body>
